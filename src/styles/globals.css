@@ -152,6 +152,7 @@ body {
     hero-logo-in 0.9s cubic-bezier(0.2, 0.95, 0.25, 1) 0.55s forwards,
     hero-logo-float 5s ease-in-out 1.6s infinite;
 }
+
 @media (min-width: 640px) {
   .hero-slice {
     width: 280px;
@@ -164,6 +165,10 @@ body {
     height: 360px;
   }
 }
+
+@media (max-width: 767px) {
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-hero-slice,
   .hero-copy,
