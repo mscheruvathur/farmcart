@@ -1,0 +1,58 @@
+import freshImage from '../assets/fresh.png';
+import carrefourLogo from '../assets/Carrefour.png';
+import nestoLogo from '../assets/Nesto.png';
+import unionLogo from '../assets/Union.png';
+
+const partners = [
+  { name: 'Nesto', image: nestoLogo, outlined: true },
+  { name: 'Carrefour', image: carrefourLogo },
+  { name: 'Union', image: unionLogo },
+  { name: 'Nesto', image: nestoLogo },
+  { name: 'Carrefour', image: carrefourLogo },
+  { name: 'Union', image: unionLogo },
+];
+
+export function ProjectsSection() {
+  return (
+    <section id="projects" aria-label="Promotions and partners">
+      <div className="relative h-[240px] w-full overflow-hidden sm:h-[320px] md:h-[544px]">
+        <img
+          src={freshImage}
+          alt="Fresh mixed fruits"
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/25 to-transparent" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto w-full max-w-[1440px] px-6 text-white sm:px-8 md:px-12 lg:px-16">
+            <h2 className="max-w-[280px] text-[32px] font-medium leading-[1.15] sm:max-w-[380px] sm:text-[44px] md:max-w-[588px] md:text-[76px] md:leading-[1.05]">Fresh Food. Relible Supply.</h2>
+            <a
+              id="contact"
+              href="#contact"
+              className="mt-4 inline-flex h-10 items-center rounded-md bg-accent px-4 text-[18px] font-medium leading-none text-white transition hover:brightness-105 sm:mt-5 sm:h-11 sm:px-5 sm:text-[24px] md:mt-7 md:h-14 md:px-7 md:text-[32px]"
+            >
+              Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
+        <h3 className="text-center text-[32px] font-medium leading-[1.1] text-[#0f1014] sm:text-[42px] md:text-[68px] md:leading-[1.02]">Our Freshness Partners</h3>
+
+        <div className="mx-auto mt-6 grid max-w-[980px] grid-cols-2 gap-x-4 gap-y-4 sm:mt-8 sm:gap-x-6 sm:gap-y-6 md:mt-10 md:grid-cols-3 md:gap-x-6 md:gap-y-8">
+          {partners.map((partner, index) => (
+            <article key={`${partner.name}-${index}`} className="flex h-[100px] items-center justify-center sm:h-[130px] md:h-[150px]">
+              <img
+                src={partner.image}
+                alt={partner.name}
+                className={`h-[80px] w-auto object-contain sm:h-[100px] md:h-[120px] ${partner.outlined ? 'border-2 border-[#3a9fff]' : ''}`}
+                loading="lazy"
+              />
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
