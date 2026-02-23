@@ -5,7 +5,7 @@ import qualityLogo from '../assets/feature-quality.png';
 export function AboutSection() {
   return (
     <section id="about" className="bg-[#efefef]" aria-label="About Farmcart">
-      <div className="flex flex-col items-center justify-evenly gap-6 px-4 py-8 sm:flex-row sm:flex-wrap sm:gap-8 md:px-12 md:py-10 lg:gap-12">
+      <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-evenly gap-6 px-4 py-12 sm:flex-row sm:flex-wrap sm:gap-8 sm:px-6 md:px-12 md:py-16 lg:flex-nowrap lg:gap-12">
         <article className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5">
           <img src={qualityLogo} alt="Quality certified" className="h-[80px] w-[86px] sm:h-[100px] sm:w-[106px] md:h-[114px] md:w-[120px]" loading="lazy" />
           <p className="max-w-[130px] text-[18px] font-medium leading-[1.1] text-[#1e1f23] sm:text-[20px] md:text-[22px] md:leading-[1.05]">Quality certified</p>
