@@ -153,6 +153,79 @@ body {
     hero-logo-float 5s ease-in-out 1.6s infinite;
 }
 
+#hero {
+  position: relative;
+}
+
+.hero-fruits-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-fruit-item {
+  position: absolute;
+  left: 60%;
+  bottom: -460px;
+  width: auto;
+  opacity: 0;
+  transform: translate3d(-50%, 0, 0) rotate(var(--base-rotate));
+  transform-origin: center;
+  will-change: transform, opacity;
+  animation: hero-fruit-rise 5s ease-in-out 1;
+}
+
+.hero-fruit-item--first {
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0) rotate(var(--base-rotate));
+  animation-name: hero-fruit-rise-first;
+  animation-duration: 5s;
+}
+
+.hero-fruit-item--last {
+  animation-name: hero-fruit-rise-last;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-fruit-rise-first {
+  100% {
+    opacity: 1;
+    transform: translate3d(calc(-50% + var(--drift-x)), -1200px, 0)
+      rotate(calc(var(--base-rotate) + var(--spin-dir))) scale(0.9);
+  }
+    opacity: 1;
+    transform: translate3d(calc(-50% + var(--drift-x)), -900px, 0)
+      rotate(calc(var(--base-rotate) + var(--spin-dir))) scale(0.9);
+  }
+@keyframes hero-fruit-rise {
+  0% {
+    opacity: 1;
+    transform: translate3d(-50%, 70px, 0)
+      rotate(calc(var(--base-rotate) - 2deg)) scale(0.88);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(calc(-50% + var(--drift-x)), -1200px, 0)
+      rotate(calc(var(--base-rotate) + var(--spin-dir))) scale(0.9);
+  }
+}
+
+@keyframes hero-fruit-rise-last {
+  0% {
+    opacity: 1;
+    transform: translate3d(-50%, 70px, 0)
+      rotate(calc(var(--base-rotate) - 2deg)) scale(0.88);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(calc(-50% + var(--drift-x)), -1030px, 0)
+      rotate(calc(var(--base-rotate) + var(--spin-dir))) scale(0.98);
+  }
+}
+
 @media (min-width: 640px) {
   .hero-slice {
     width: 280px;
@@ -174,7 +247,8 @@ body {
   .hero-copy,
   .hero-subcopy,
   .hero-cta,
-  .hero-logo {
+  .hero-logo,
+  .hero-fruit-item {
     animation: none !important;
     opacity: 1;
     transform: none;

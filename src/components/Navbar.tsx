@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import farmcartLogo from '../assets/FARMCART-LOGO.png';
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
@@ -13,9 +14,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b-4 border-[#039448] bg-white shadow-sm">
       <nav className="mx-auto flex h-[70px] w-full max-w-[1440px] items-center justify-between px-6 sm:px-8 md:h-[80px] md:px-12 lg:px-16" aria-label="Main navigation">
-        <a href="#hero" className="text-[36px] font-black leading-none tracking-tight sm:text-[40px] md:text-[44px]">
-          <span className="text-[#039448]">farm</span>
-          <span className="text-[#f4b343]">cart</span>
+        <a href="#hero" className="inline-flex items-center" aria-label="Farmcart home">
+          <img src={farmcartLogo} alt="Farmcart" className="h-10 w-auto object-contain sm:h-11 md:h-12" />
         </a>
 
         <button

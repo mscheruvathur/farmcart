@@ -37,7 +37,7 @@ export function ProjectsSection() {
             <a
               id="contact"
               href="#contact"
-              className="mt-4 inline-flex h-10 items-center rounded-md bg-accent px-4 text-[18px] font-medium leading-none text-white transition hover:brightness-105 sm:mt-5 sm:h-11 sm:px-5 sm:text-[24px] md:mt-7 md:h-14 md:px-7 md:text-[32px]"
+              className="mt-4 inline-flex items-center rounded-xl bg-accent px-8 py-3 text-[22px] font-semibold leading-none text-white shadow-lg transition hover:brightness-105 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 sm:px-10 sm:py-4 sm:text-[26px] md:mt-7 md:text-[32px]"
             >
               Get a Quote
             </a>

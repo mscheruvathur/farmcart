@@ -20,7 +20,7 @@ export function HeroSection() {
 
             <a
               href="#services"
-              className="mt-5 inline-flex h-10 items-center rounded-lg bg-accent px-5 text-[20px] font-medium leading-none text-[#1f1f1f] transition hover:brightness-105 sm:h-11 sm:px-6 sm:text-[24px] md:mt-7 md:h-12 md:px-7 md:text-[32px]"
+              className="mt-5 inline-flex items-center rounded-xl bg-accent px-8 py-3 text-[22px] font-semibold leading-none text-[#1f1f1f] shadow-lg transition hover:brightness-105 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 sm:px-10 sm:py-4 sm:text-[26px] md:mt-7 md:text-[32px]"
             >
               Shop Now
             </a>
@@ -30,7 +30,7 @@ export function HeroSection() {
             <img
               src={heroLogo}
               alt="Farmcart logo"
-              className="h-[180px] w-auto object-contain sm:h-[280px] md:h-[520px] lg:h-[560px] xl:h-[600px]"
+              className="hero-logo h-[180px] w-auto object-contain sm:h-[280px] md:h-[520px] lg:h-[560px] xl:h-[600px]"
               loading="eager"
             />
           </div>

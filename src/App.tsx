@@ -1,5 +1,6 @@
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
+import { HeroFruitAnimation } from './components/HeroFruitAnimation';
 import { HeroSection } from './components/HeroSection';
 import { Navbar } from './components/Navbar';
 import { OrangeBannerSection } from './components/OrangeBannerSection';
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <main id="main-content" className="w-full">
         <HeroSection />
+        <HeroFruitAnimation />
         <AboutSection />
         <OrangeBannerSection />
         <ServicesSection />
