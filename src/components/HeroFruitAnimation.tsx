@@ -17,6 +17,7 @@ type FruitConfig = {
   driftX: string;
   delay: string;
   rotate: string;
+  spin: number;
 };
 
 
@@ -24,10 +25,10 @@ function getRandomDeg(min: number, max: number) {
   return (Math.random() * (max - min) + min).toFixed(1) + 'deg';
 }
 
-function getRandomSpin() {
+// function getRandomSpin() {
   // Randomly choose +360 or -360 for spin direction
-  return Math.random() > 0.5 ? 360 : -360;
-}
+  // return Math.random() > 0.5 ? 360 : -360;
+// }
 
 const fruitConfigs: FruitConfig[] = [
   { src: fruit1, height: 600, left: '38%', bottom: '-550px', driftX: '24px', delay: '0s', rotate: getRandomDeg(-8, 8) },
