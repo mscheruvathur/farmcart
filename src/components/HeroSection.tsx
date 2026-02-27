@@ -19,7 +19,7 @@ export function HeroSection() {
             </p>
 
             <a
-              href="#services"
+              href="#projects"
               className="mt-5 inline-flex items-center rounded-xl bg-accent px-8 py-3 text-[22px] font-semibold leading-none text-[#1f1f1f] shadow-lg transition hover:brightness-105 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 sm:px-10 sm:py-4 sm:text-[26px] md:mt-7 md:text-[32px]"
             >
               Shop Now

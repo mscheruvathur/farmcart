@@ -3,7 +3,7 @@ import farmcartLogo from '../assets/FARMCART-LOGO.png';
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
-  { label: 'Products', href: '#services' },
+  { label: 'Projects', href: '#projects' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ];

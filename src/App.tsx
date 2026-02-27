@@ -4,8 +4,8 @@ import { HeroFruitAnimation } from './components/HeroFruitAnimation';
 import { HeroSection } from './components/HeroSection';
 import { Navbar } from './components/Navbar';
 import { OrangeBannerSection } from './components/OrangeBannerSection';
-import { ProjectsSection } from './components/ProjectsSection';
-import { ServicesSection } from './components/ServicesSection';
+import { PartnersSection } from './components/PartnersSection';
+import { ProjectSection } from './components/ProjectSection';
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
         <HeroFruitAnimation />
         <AboutSection />
         <OrangeBannerSection />
-        <ServicesSection />
-        <ProjectsSection />
+        <ProjectSection />
+        <PartnersSection />
       </main>
       <Footer />
     </div>
