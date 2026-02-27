@@ -22,12 +22,12 @@ const partners = [
 export function PartnersSection() {
   return (
     <section id="partners" className="bg-white px-4 pb-10 sm:px-6 sm:pb-12 md:px-8 md:pb-16" aria-label="Partners">
-      <div className="mx-auto w-full max-w-[1300px] pt-6 sm:pt-8 md:pt-10">
-        <div className="relative h-[180px] overflow-hidden sm:h-[200px] md:h-[360px]">
+      <div className="mx-auto w-full max-w-[1500px] pt-6 sm:pt-8 md:pt-10">
+        <div className="relative h-[180px] overflow-hidden sm:h-[200px] md:h-[390px]">
         <img
           src={freshImage}
           alt="Fresh food and vegetables"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[center_83%]"
           loading="lazy"
         />
 
@@ -57,7 +57,7 @@ export function PartnersSection() {
           Our Freshness Partners
         </h3>
 
-        <div className="mx-auto mt-6 grid max-w-[860px] grid-cols-2 place-items-center gap-x-8 gap-y-10 sm:mt-8 sm:grid-cols-4 sm:gap-x-10 sm:gap-y-12">
+        <div className="mx-auto mt-6 grid max-w-[1860px] grid-cols-2 place-items-center gap-x-8 gap-y-10 sm:mt-8 sm:grid-cols-4 sm:gap-x-10 sm:gap-y-12">
           {partners.map((partner, index) => (
             <article key={`${partner.name}-${index}`} className="flex h-[72px] items-center justify-center sm:h-[82px]">
               <img
