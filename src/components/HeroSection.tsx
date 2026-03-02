@@ -6,10 +6,10 @@ export function HeroSection() {
       <div className="mx-auto min-h-[500px] w-full max-w-[1440px] px-4 py-8 sm:min-h-[580px] sm:px-6 md:h-[641px] md:px-8 md:py-0 lg:h-[680px] lg:px-12 xl:h-[720px] xl:px-16">
         <div className="relative grid h-full items-center gap-8 md:grid-cols-[1fr_0.9fr]">
           <div className="relative z-10 text-center md:pl-1 md:text-left">
-            <h1 className="mx-auto max-w-[460px] text-[36px] font-medium leading-[1.1] text-white sm:text-[48px] md:mx-0 md:text-[72px] md:leading-[0.96] lg:text-[80px]">
+            <h1 className="mx-auto max-w-[530px] text-[36px] font-medium leading-[1.1] text-white sm:text-[48px] md:mx-0 md:text-[72px] md:leading-[0.96] lg:text-[80px]">
               Freshness
               <br />
-              that fuels <em className="font-normal italic">your</em>
+              that fuels your
               <br />
               day.
             </h1>
